@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Lista de Filmes</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row d-flex justify-content-center text-center border py-2">
+      <form method="post">
+        <h3>Cadastro de Filmes</h3>
+        <div class="form-group">
+          <label for="titulo">Titulo</label>
+          <input type="text" name="titulo" id="" class="form-control form-control-sm">
+        </div>
+        <div class="form-group">
+          <label for="img">Imagem</label>
+          <input type="text" name="imagem" id="img" class="form-control form-control-sm" placeholder="Digite um número aleatório">
+        </div>
+        <div class="form-group">
+          <label for="cat">Categorias</label>
+          <select name="categorias" id="cat" class="form-control form-control-sm" multiple>
+            <option value="01">Drama</option>
+            <option value="02">Suspense</option>
+            <option value="03">Ação</option>
+            <option value="04">Comédia</option>
+            <option value="05">Terror</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col p-0">
+        <div id="app" class="card-columns">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
